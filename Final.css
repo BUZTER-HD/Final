@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  border: 0px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  
+}
+
+.header,
+.img1,
+.img2 {
+  display: flex;
+  filter:saturate(1.4);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+
+
+.header {
+  background-image: url("palawan.jpg");
+  min-height: 100vh;
+  
+}
+.img1 {
+  background-image: url("under.jpg");
+  min-height: 100vh;
+}
+.img2 {
+  background-image: url("El_Nido_banner.jpg");
+  min-height: 100vh;
+}
+
+/*------------ boxes ----> */
+
+.box,
+.box2,
+.box3 {
+  position: relative;
+  align-self: center;
+}
+.text1,
+.text2,
+.text3 {
+  
+  color: rgb(255, 255, 255);
+  letter-spacing: 10px;
+  text-align: start;
+  font-size: 4rem;
+
+  
+  /* transition: 1s ease-out; */
+  
+}
+.subtext {
+  margin-left: 20px;
+  padding-right: 10px;
+  margin-right: 20px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  font-size: 4rem;
+}
+
+p {
+  text-indent: 30px;
+  padding-top: 20px;
+  line-height: 27px;
+  color: #000000d7;
+}
+.p1 {
+  margin: 50px 20px 0px 50px;
+  width: 50vw;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pal1 {
+  padding: 110px 20px 20px 35px;
+  width: 50vw;
+}
+.intro,
+.ppc,
+.ElN {
+  display: flex;
+  color: #000000;
+  background-color: #ffffff;
+  height: 100vh;
+  font-size: 100%;
+}
+.ppcTitle {
+  font-weight: bold;
+}
+h3 {
+  margin-left: 20px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.icon-style,
+i {
+  opacity: 0.4;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.icon-style:hover,
+i:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+@keyframes some {
+  0%{color: black;}
+}
+@keyframes some1 {
+  0%{padding: 12px 0px 10px 0px;}
+  25%{padding: 12px 4px 10px 2px;}
+  50%{padding: 12px 7px 10px 7px;}
+  100%{padding: 12px 10px 10px 10px;}
+} 
+.descTxt {
+  font-size: 1.2rem;
+  font-weight: 300;
+  /* animation: some .5s ease forwards; */
+}
+
+.text1:first-of-type{
+animation: showup 7s;
+}
+.text1:last-of-type{
+  width: 0px;
+  animation: reveal 3s ;
+}
+.palawan:last-of-type{
+  margin-left: -3px;
+  animation: slidein 3s ;
+}
+@keyframes showup{
+  0%{opacity: 0;}
+  20%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes slidein{
+  0%{margin-left: -200px; opacity: 0;}
+  20%{margin-left: -200px; opacity: 0;}
+  35%{margin-left: -150px;  opacity: 0;}
+  75%{margin-left: -3px;  opacity: 1;}
+  100%{margin-left: -3px; opacity: 1;}
+
+}
+@keyframes reveal{
+  0%{opacity: 0; width: 0px}
+  20%{opacity: 1; width: 0px}
+  30%{ width: 355px}
+  80%{ opacity: 1}
+  100%{opacity: 1; width: 355px}
+
+}
+.newDiv,
+.box2,
+.box3 {
+ 
+  background-color: rgba(0, 0, 0, 0.482);
+  padding: 12px 10px 10px 10px;
+/* animation: some1 1s ease forwards; */
+/* animation-delay: 1s; */
+  
+}
+a {
+  text-decoration: none;
+}
+.btn-link {
+  margin: 20px 0px 0px 20px;
+  display: block;
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  padding: 7px;
+  text-align: center;
+  border: solid white;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-link:hover {
+  transition: all 0.5s ease;
+  
+  background-color: rgb(29, 151, 221);
+  border-color: rgb(29, 151, 221);
+}
+
+.desc {
+  margin: 20px 20px 0px 20px;
+  padding-right: 50vw;
+}
+
+.img-size {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+}
+
+footer {
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #334a52;
+}
+
+.socmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  padding-right: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+.copyR {
+  display: flex;
+  margin-top: 20px;
+  align-self: flex-end;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  color: #6a6a6a;
+  font-size: 20px;
+}
+.email-text {
+  color: rgba(255, 255, 255, 0.746);
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+}
